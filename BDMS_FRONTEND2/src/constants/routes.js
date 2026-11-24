@@ -1,0 +1,36 @@
+export const ROUTES = {
+  HOME: "/",
+  ABOUT: "/about",
+  CONTACT: "/contact",
+  LOGIN: "/login",
+  REGISTER: "/register",
+  FORGOT_PASSWORD: "/forgot-password",
+  RESET_PASSWORD: "/reset-password",
+
+  DONOR_DASHBOARD: "/donor/dashboard",
+  DONOR_PROFILE: "/donor/profile",
+  DONOR_HISTORY: "/donor/donation-history",
+  DONOR_NOTIFICATIONS: "/donor/notifications",
+  DONOR_REQUESTS: "/donor/blood-requests",
+
+  HOSPITAL_DASHBOARD: "/hospital/dashboard",
+  HOSPITAL_PROFILE: "/hospital/profile",
+  HOSPITAL_CREATE_REQUEST: "/hospital/blood-requests/create",
+  HOSPITAL_REQUESTS: "/hospital/blood-requests",
+  HOSPITAL_DONATION_HISTORY: "/hospital/donation-history",
+  HOSPITAL_SEARCH_DONORS: "/hospital/search-donors",
+  HOSPITAL_NOTIFICATIONS: "/hospital/notifications",
+
+  ADMIN_DASHBOARD: "/admin/dashboard",
+  ADMIN_USERS: "/admin/users",
+  ADMIN_DONORS: "/admin/donors",
+  ADMIN_HOSPITALS: "/admin/hospitals",
+  ADMIN_APPROVALS: "/admin/hospital-approvals",
+  ADMIN_REQUESTS: "/admin/blood-requests",
+  ADMIN_DONATION_HISTORY: "/admin/donation-history",
+  ADMIN_REPORTS: "/admin/reports",
+  ADMIN_NOTIFICATIONS: "/admin/notifications",
+
+  FORBIDDEN: "/403",
+  SERVER_ERROR: "/500",
+};

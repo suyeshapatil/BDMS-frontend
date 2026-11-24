@@ -1,0 +1,63 @@
+:root {
+  --bdms-sidebar-width: 240px;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+/* ---- Dashboard shell / sidebar (used by DashboardLayout + Sidebar) ---- */
+.bdms-dashboard-shell {
+  min-height: calc(100vh - 56px);
+}
+
+.bdms-sidebar {
+  width: var(--bdms-sidebar-width);
+  flex-shrink: 0;
+}
+
+.bdms-sidebar .nav-link {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.bdms-sidebar .nav-link:hover {
+  background-color: #f1f3f5;
+}
+
+.bdms-sidebar .nav-link.active:hover {
+  background-color: #dc3545;
+}
+
+/* Off-canvas behaviour on small screens */
+@media (max-width: 991.98px) {
+  .bdms-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1045;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease-in-out;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .bdms-sidebar-open {
+    transform: translateX(0);
+  }
+
+  .bdms-sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1040;
+  }
+}
+
+/* ---- Misc ---- */
+.card {
+  border-radius: 0.75rem;
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
